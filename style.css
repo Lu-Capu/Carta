@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     background-color: #f6dde1;
     font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
@@ -206,4 +207,214 @@ footer {
     background-color: #c96b7c;
     color: #fffaf8;
     box-shadow: 0 4px 10px rgba(201, 107, 124, 0.3);
+=======
+html {
+    background-color: #f6dde1;
+    font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
+    line-height: 1.8;
+    word-spacing: 0.05em;
+}
+
+@keyframes vista {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cabecera {
+    background: linear-gradient(180deg, #c96b7c 0%, #f6dde1 100%);
+    padding: 28px 1.5rem 46px 1.5rem;
+    text-align: left;
+    font-style: oblique;
+    animation: vista 2s ease 0.7s both;
+}
+
+.cabecera h1 {
+    margin: 0;
+    color: #fffaf8;
+    font-size: 2rem;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.carta {
+    max-width: 650px;
+    margin: -30px auto 40px;
+    position: relative;
+    border: 1px solid #eab8bf;
+    padding: 60px;
+    text-align: justify;
+
+    background-color: #fffaf8;
+    box-shadow: 0 8px 24px rgba(107, 18, 32, 0.15);
+    border-radius: 8px;
+
+    animation: vista 2s ease 0.15s both;
+}
+
+.carta p {
+    opacity: 0;
+    animation: vista 0.9s ease forwards;
+}
+
+.carta p:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.carta p:nth-of-type(2) {
+    animation-delay: 0.95s;
+}
+
+.carta h2 {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+}
+
+.primer::first-letter {
+    font-size: 2.8em;
+    font-weight: bold;
+    line-height: 0.8;
+    float: left;
+    color: #6b1220
+}
+
+
+.horizontal {
+    width: 50%;
+    height: 20px;
+    background: transparent;
+    border-top: 4px solid #eab8bf;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+}
+
+.vertical {
+    width: 20px;
+    height: 50%;
+    background: transparent;
+    border-left: 4px solid #eab8bf;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+}
+
+.cadena-esquina {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    animation: vista 2s ease 0.7s both;
+}
+
+.eslabon {
+    position: relative;
+    width: 30px;
+    flex: 1 1 0;
+}
+
+.eslabon .linea {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.eslabon .linea1 {
+    border-right: 4px solid #fffaf8;
+    left: 0;
+}
+
+.eslabon .linea2 {
+    border-left: 4px solid #eab8bf;
+    left: 10px;
+}
+section{
+    position: relative;
+}
+.escritor{
+    position: relative;
+    top: 3rem;
+    left: 31rem;
+    background-color: #eab8bf;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f6dde1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c96b7c;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #f6dde1;
+    text-align: center;
+    padding: 20px;
+    color: #9c5260;
+    font-size: 0.85rem;
+    /* border-top:1px solid #6b1220; */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Clase para ocultar páginas inactivas */
+.carta.oculta {
+    display: none;
+}
+
+/* Estilo para el contenedor de botones */
+.navegacion {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.navegacion.left {
+    position: relative;
+    top: 67px;
+    right: 31rem;
+}
+
+/* Estilo elegante para los botones */
+.btn-pagina {
+    background: transparent;
+    border: 1px solid #c96b7c;
+    color: #6b1220;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-pagina:hover {
+    background-color: #c96b7c;
+    color: #fffaf8;
+    box-shadow: 0 4px 10px rgba(201, 107, 124, 0.3);
+>>>>>>> 0234489a2c8a714bb21b6c3730d195b0171b4e1b
 }
